@@ -109,12 +109,13 @@ header nav ul li a:hover {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: flex-start;
 }
 
 .website {
   margin: 20px;
-  flex: 1;
+  width: 30%;
+  min-height: 150px;
   background: #b9e4e3;
   color: black;
   text-align: center;
@@ -124,6 +125,8 @@ header nav ul li a:hover {
   background: -moz-linear-gradient(top, #beeae9, #a8cfce);
   background: -o-linear-gradient(top, #beeae9, #a8cfce);
   background: -ms-linear-gradient(top, #beeae9, #a8cfce);
+  display: flex;
+  flex-direction: column;
 }
 .website a{
   font-size: 120%;
