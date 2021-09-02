@@ -2,8 +2,8 @@
 /* Define vars*/
 :root {
   --primary-color: #fff;
-  --secondary-color: #024e76;
-  --tertiary-color: #39a6b2;
+  --secondary-color: darkred ;
+  --tertiary-color: black;
 }
 
 
@@ -14,18 +14,17 @@
   margin: 0;
   padding: 0px;
 }
-
+/*setup font-style*/
 body {
-  color:white;
+  color: var(--primary-color);
   font-family: Helvetica, Arial, sans-serif;
 }
-
 
 /* HEADER / NAV BAR STYLES START */
 
 header {
   padding: 20px 35px;
-  background-color: darkred;
+  background-color: var(--secondary-color);
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -38,13 +37,13 @@ header h1 {
   font-weight: bold;
   margin: 0;
   font-size: 36px;
-  color: white;
+  color: var(--primary-color);
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header a {
   text-decoration: none;
-  color: white;
+  color: var(--primary-color);
 }
 
 header nav {
@@ -67,22 +66,22 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-  background: white;
-  color: black;
+  background: var(--primary-color);
+  color: var(--tertiary-color);
   border-radius: 15px;
   text-shadow: none;
 }
 /* HEADER / NAVBAR STYLES END */
 /* HERO STYLES START */
 .hero {
-  background-image: url('../images/hero-bg.jpg');
-  background-size: cover;
+  background-image: url('../images/hero-bg.jpg');  /* The image used */
+  background-size: cover;                          /* Resize the background image to cover the entire container */
+  background-attachment: fixed;                   /*the img does not move when scroll*/
+  background-position:  top-left;                       /* top   from left*/
   display: flex;
   justify-content: Left;
   flex-wrap: wrap;
   align-items: flex-start;
-  background-attachment: fixed;
-  background-position: 80%;
 }
 
 .hero-cta {
@@ -97,7 +96,7 @@ header nav ul li a:hover {
 .hero-cta h2 {
   font-style: italic;
   font-size: 55px;
-  color:white;
+  color: var(--primary-color);
   text-align: left;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -112,9 +111,9 @@ header nav ul li a:hover {
 .section-title {
   font-size: 48px;
   font-weight: bold;
-  color: white;
+  color: var(--primary-color);
   padding: 10px;
-  background-color: darkred;
+  background-color:  var(--secondary-color);
   text-align: center;
   margin: 0 auto 0 auto;
 }
@@ -134,7 +133,7 @@ header nav ul li a:hover {
   width: 30%;
   min-height: 150px;
   background: #b9e4e3;
-  color: black;
+  color: var(--tertiary-color);
   text-align: center;
   border-bottom: 2px solid #b2b2b2;
   background-color: #b9e4e3;
@@ -144,6 +143,10 @@ header nav ul li a:hover {
   background: -ms-linear-gradient(top, #beeae9, #a8cfce);
   display: flex;
   flex-direction: column;
+}
+.website img{
+ height: 50%;
+ width: 95%;  
 }
 .website a{
   font-size: 120%;
@@ -157,10 +160,6 @@ header nav ul li a:hover {
   background: -moz-linear-gradient(top, #a8cfce, #beeae9);
   background: -o-linear-gradient(top, #a8cfce, #beeae9);
   background: -ms-linear-gradient(top, #a8cfce, #beeae9);
-}
-
-.website img {
-  width: 100%;
 }
 
 .website-bio {
@@ -188,12 +187,12 @@ header nav ul li a:hover {
   }
 
 .contact-info div {
-  color: black;
+  color: var(--tertiary-color);
   
 }
 
 .contact-info h3 {
-  color: black;
+  color:var(--tertiary-color);
   font-size: 36px;
   
 }
@@ -229,15 +228,15 @@ header nav ul li a:hover {
 .contact-form legend {
   width: 90%;
   margin: auto;
-  background-color: darkred;
+  background-color: var(--secondary-color);
   text-decoration: underline;
-  color: white;
+  color: var(--primary-color);
   font-weight: bold;
   border: 1px solid #dcdcdc;
   border-radius: 10px;
   padding: 10px 20px;
   text-align: center;
-  font-size: 150%
+  font-size: 150%;
 }
 .contact-form label{
    margin: 1% 5% 1% 5%;
@@ -312,7 +311,7 @@ footer div {
 }
 /* END FOOTER STYLES */
 .copy{
-  color: #024e76;
+  color: navy;
 }
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
@@ -374,17 +373,13 @@ footer div {
     flex: 0 100%;
   }
   .contact-info {
-    padding: 20px;
-    text-align: center;
+       text-align: center;
   }
 
-  
-  .contact-info > * {
+   .contact-info > * {
     flex: 0 100%;
   }
 
   .contact-form {
     flex: 0 100%
   }
- 
-}
