@@ -1,5 +1,6 @@
 # Purpose
-A website provides Ivonne Bio Information and links to her projects done recently.  
+A website that provides Ivonne Bio Information,links to her projects done recently, resume and contact information.
+The web site was built with the intention to get a job.
 
 ![image](https://user-images.githubusercontent.com/88918693/131871065-6a98ac0d-c20e-40d0-b4f2-ba696508681d.png)
 
